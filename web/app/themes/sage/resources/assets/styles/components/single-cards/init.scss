@@ -1,0 +1,114 @@
+.single-cards {
+  position: relative;
+  margin-bottom: 50px;
+
+  &__title {
+    margin-right: 170px;
+    margin-bottom: 25px;
+
+    @media screen and (max-width: 767px) {
+      margin-right: 0;
+    }
+
+    &-inner {
+      transition: color ease 200ms;
+      font-size: 24px;
+      line-height: 31px;
+      color: $dark;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    a.single-cards__title-inner:hover {
+      color: $theme_light-10;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 25px;
+    color: $light;
+  }
+
+  &__more {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    text-decoration: none;
+    color: $blue;
+    padding-right: 25px;
+    transition: color ease 200ms;
+
+    @media screen and (max-width: 767px) {
+      display: inline-flex;
+      position: relative;
+      top: auto;
+      right: auto;
+      margin-top: 10px;
+    }
+
+    svg {
+      width: 17px;
+      position: absolute;
+      top: 3px;
+      right: 0;
+      height: auto;
+      fill: $blue;
+    }
+
+    &:hover {
+      color: $theme_light-10;
+    }
+  }
+
+  &__wrap {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 40px;
+    justify-content: space-between;
+
+    @media screen and (max-width: 1023px) {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @media screen and (max-width: 767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    &-inner {
+      position: relative;
+      padding-left: 29px;
+      margin-bottom: 15px;
+    }
+
+    &-link {
+      text-decoration: none;
+      color: $normal;
+      transition: color ease 200ms;
+      line-height: 24px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $light;
+        position: absolute;
+        top: 2px;
+        transition: fill ease 200ms;
+        left: 0;
+      }
+
+      &:hover {
+        color: $theme_light-10;
+
+        svg {
+          fill: $theme_light-10;
+        }
+      }
+    }
+  }
+}

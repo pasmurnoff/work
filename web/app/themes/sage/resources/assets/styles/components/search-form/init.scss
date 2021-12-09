@@ -1,0 +1,59 @@
+.search-form {
+  position: relative;
+
+  input {
+    padding: 0 44px 0 17px;
+    height: 64px;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 40px;
+    font-family: $font;
+    background-color: white;
+    border: 1px solid #eee;
+    outline: none;
+    color: $normal;
+    box-sizing: border-box;
+    width: 100%;
+
+    &::placeholder {
+      color: $light;
+    }
+
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+
+  &__submit {
+    position: absolute;
+    top: 50%;
+    width: 23px;
+    height: 23px;
+    right: 20px;
+    transform: translateY(-50%);
+    outline: none;
+    background-color: transparent;
+    fill: $light;
+    border: none;
+    font-size: 15px;
+    padding: 0;
+    cursor: pointer;
+
+    @media screen and (max-width: 767px) {
+      width: 18px;
+      height: 18px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

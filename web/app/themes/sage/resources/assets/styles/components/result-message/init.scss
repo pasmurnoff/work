@@ -1,0 +1,12 @@
+.result-message {
+  position: fixed;
+  max-width: 320px;
+  padding: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: $shadow;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 5px;
+}

@@ -1,0 +1,76 @@
+.text {
+  font-family: $font;
+  font-size: 16px;
+  line-height: 24px;
+
+  &_uppercase {
+    text-transform: uppercase;
+  }
+
+  &_sm {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  &_middle {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  &_large {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &_regular {
+    font-weight: 400 !important;
+  }
+
+  &_medium {
+    font-weight: 600 !important;
+  }
+
+  &_bold {
+    font-weight: 700 !important;
+  }
+
+  &_white {
+    color: white;
+  }
+
+  &_theme {
+    color: $theme;
+  }
+
+  &_light {
+    color: $light;
+  }
+
+  &_normal {
+    color: $normal;
+  }
+
+  &_dark {
+    color: $dark;
+  }
+
+  &_success {
+    color: $success;
+  }
+
+  &__error {
+    color: $error;
+  }
+
+  &_center {
+    text-align: center;
+  }
+
+  &_link {
+    text-decoration: none;
+  }
+
+  &_shadow {
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+  }
+}

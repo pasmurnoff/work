@@ -1,0 +1,18 @@
+.sidebar-search {
+  .search-form {
+    &__input {
+      height: 40px;
+      font-size: 14px;
+      transition: border-color ease 200ms;
+
+      &:focus {
+        border: 1px solid $theme;
+      }
+    }
+
+    &__submit {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}

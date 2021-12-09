@@ -1,0 +1,21 @@
+.footer-menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  &__item {
+    margin: 5px 15px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $normal;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $theme_light-10;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.sidebar-menu {
+  list-style-type: none;
+  padding-left: 0;
+
+  &__link {
+    color: $dark;
+    text-decoration: none;
+    line-height: 28px;
+    transition: color ease 200ms;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  &__active {
+    .sidebar-menu {
+      &__link {
+        color: $blue;
+      }
+    }
+  }
+}

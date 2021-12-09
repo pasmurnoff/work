@@ -1,0 +1,46 @@
+@import "categories";
+@import "search";
+@import "menu";
+
+.sidebar {
+  overflow: auto;
+
+  &_content {
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100%;
+    background-color: $theme;
+    z-index: 100;
+
+    &__wrapper {
+      padding: 24px 32px;
+    }
+
+    &__item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &_aside {
+    @media screen and (min-width: 1024px) {
+      display: none;
+    }
+
+    right: -270px;
+    transition: right ease 400ms;
+  }
+
+  &__button {
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+  }
+}

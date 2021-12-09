@@ -1,0 +1,15 @@
+.noty {
+  &_type {
+    &__success {
+      background-color: $success !important;
+    }
+
+    &__error {
+      background-color: $error !important;
+    }
+  }
+
+  &_bar {
+    border-radius: 7px;
+  }
+}

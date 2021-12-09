@@ -1,0 +1,80 @@
+.card {
+  &__title {
+    a {
+      text-decoration: none;
+      transition: color ease 200ms;
+      color: $dark;
+
+      &:hover {
+        color: $theme_light-10;
+      }
+    }
+  }
+
+  &__text {
+    color: $light;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__item {
+    padding-left: 29px;
+    position: relative;
+
+    &-link {
+      text-decoration: none;
+      color: $normal;
+      transition: color ease 200ms;
+      line-height: 24px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: $light;
+        position: absolute;
+        top: 2px;
+        transition: fill ease 200ms;
+        left: 0;
+      }
+
+      &:hover {
+        color: $theme_light-10;
+
+        svg {
+          fill: $theme_light-10;
+        }
+      }
+    }
+  }
+
+  /* stylelint-disable */
+  &__more {
+    text-decoration: none;
+    color: $blue;
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+    transition: color ease 200ms;
+
+    svg {
+      width: 17px;
+      position: absolute;
+      top: 3px;
+      right: 0;
+      height: auto;
+      fill: $blue;
+    }
+
+    &:hover {
+      color: $theme_light-10;
+
+      svg {
+        fill: $theme_light-10;
+      }
+    }
+  }
+
+  /* stylelint-enable */
+}

@@ -1,0 +1,65 @@
+.v-card {
+  box-shadow: $shadow;
+  border-radius: 7px;
+  margin-bottom: 50px;
+
+  &_spacing {
+    padding: 3rem 4.5rem;
+
+    @media screen and (max-width: 767px) {
+      padding: 1.5em 1.8em;
+    }
+
+    @media screen and (max-width: 467px) {
+      padding: 1.5em 1.3em;
+    }
+  }
+
+  &__item {
+    padding: 2rem 2.5rem;
+    border-bottom: 1px solid $border;
+
+    &:last-child {
+      border-bottom: unset;
+    }
+
+    @media screen and (max-width: 767px) {
+      padding: 1.5em 2em;
+    }
+
+    &-title {
+      font-size: 20px;
+      position: relative;
+      transition: color ease 200ms;
+
+      svg {
+        top: 2px;
+        right: 0;
+        visibility: hidden;
+        opacity: 0;
+        width: 20px;
+        height: 20px;
+        margin-left: -10px;
+        margin-bottom: -4px;
+        fill: $theme_light-10;
+        transition: all ease 200ms;
+      }
+    }
+
+    &:hover {
+      svg {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 5px;
+      }
+
+      .v-card__item-title {
+        color: $theme_light-10;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

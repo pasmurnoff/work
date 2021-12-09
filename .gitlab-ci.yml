@@ -1,0 +1,9 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  script:
+      - sudo su - finikosupport.com -c "sh /var/www/finikosupport.com/data/www/finikosupport.com/deploy.sh"
+  only:
+    - master

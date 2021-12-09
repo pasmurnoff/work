@@ -1,0 +1,11 @@
+.single {
+  &__img {
+    width: 100%;
+    height: auto;
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+}

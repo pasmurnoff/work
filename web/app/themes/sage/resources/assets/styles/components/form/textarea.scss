@@ -1,0 +1,29 @@
+.textarea {
+  appearance: none;
+  outline: none;
+  background: transparent;
+  border: 1px solid $border;
+  box-shadow: none;
+  border-radius: 5px;
+  height: 9rem;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: $normal;
+  transition: border-color ease 200ms;
+  padding: 16px;
+  resize: none;
+
+  &::placeholder {
+    color: $light;
+    font-size: 1rem;
+  }
+
+  &:focus {
+    border-color: $theme;
+  }
+
+  &.wrong {
+    border-color: $error;
+  }
+}

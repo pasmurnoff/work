@@ -1,0 +1,41 @@
+.checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  user-select: none;
+
+  &__box {
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid $border;
+    border-radius: 2px;
+    display: flex;
+    transition: border-color ease 200ms;
+    position: relative;
+
+    &::after {
+      content: "";
+      width: 6px;
+      position: absolute;
+      height: 10px;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      transform: rotate(45deg);
+      transition: border-color ease 200ms;
+      top: 0;
+      left: 3px;
+    }
+  }
+
+  input {
+    display: none;
+
+    &:checked ~ .checkbox__box {
+      border: 2px solid $theme;
+
+      &::after {
+        border-color: $theme;
+      }
+    }
+  }
+}

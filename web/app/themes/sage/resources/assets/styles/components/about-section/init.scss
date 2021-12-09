@@ -1,0 +1,31 @@
+.about-section {
+  &__content {
+    ul,
+    ol {
+      padding-left: 20px;
+    }
+
+    p,
+    ul,
+    ol {
+      margin-bottom: 15px;
+      font-size: 16px;
+      line-height: 1.3;
+      color: $dark;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 20px;
+      color: $dark;
+    }
+  }
+}

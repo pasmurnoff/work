@@ -1,0 +1,25 @@
+.body-wrap {
+  position: relative;
+  transition: left ease 400ms !important;
+  left: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  &.panel_open {
+    left: -270px;
+
+    .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .sidebar_aside {
+      right: 0;
+    }
+  }
+
+  .wrapper {
+    flex-grow: 1;
+  }
+}

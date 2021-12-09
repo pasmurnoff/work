@@ -1,0 +1,48 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: background-color ease 200ms;
+  width: max-content;
+  text-decoration: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  border: unset;
+
+  &_center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &_middle {
+    height: 40px;
+  }
+
+  &_large {
+    height: 48px;
+  }
+
+  &_light {
+    background-color: #fff;
+    color: $dark;
+
+    &:hover {
+      background-color: $bg;
+    }
+  }
+
+  &_theme {
+    color: white;
+    background-color: $blue;
+
+    &:hover {
+      background-color: $theme_light-10;
+    }
+  }
+
+  &_block {
+    width: 100%;
+  }
+}

@@ -1,0 +1,30 @@
+.breadcrumbs {
+  &-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $bg;
+    color: $light;
+
+    a {
+      color: $dark;
+      text-decoration: none;
+      transition: color ease 200ms;
+
+      &:hover {
+        color: $theme_light-10;
+      }
+    }
+  }
+
+  .breadcrumb__separator {
+    margin-right: 3px;
+    margin-left: 3px;
+    line-height: 100%;
+
+    svg {
+      width: 8px;
+      height: 8px;
+      fill: $light;
+    }
+  }
+}
