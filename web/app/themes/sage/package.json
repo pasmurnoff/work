@@ -76,6 +76,7 @@
     "yargs": "~11.0.0"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "@fontawesome-pro/fontawesome-pro": "https://github.com/erlementovich/fontawesome-pro-1.git",
     "jquery": "^3.3.1",
     "noty": "^3.2.0-beta-deprecated"

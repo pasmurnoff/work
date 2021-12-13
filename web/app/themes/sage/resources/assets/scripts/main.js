@@ -3,6 +3,7 @@ import 'jquery';
 
 // Import components
 import './components/header/init'
+import './components/fancybox/init'
 
 // import local dependencies
 import Router from './util/Router';
